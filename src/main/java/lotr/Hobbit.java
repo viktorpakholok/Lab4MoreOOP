@@ -1,13 +1,10 @@
 package lotr;
 
+import lotr.kickstategy.HobbitKick;
 
 public class Hobbit extends Character {
     public Hobbit(){
-        super(3, 0);
-    }
-
-    public void kick(Character c) {
-        toCry();
+        super(3, 0, new HobbitKick());
     }
 
     public void toCry(){
