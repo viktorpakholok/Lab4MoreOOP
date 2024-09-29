@@ -1,31 +1,34 @@
-// import lotr.Hobbit;
-// import org.junit.jupiter.api.BeforeEach;
-// import org.junit.jupiter.api.Test;
+import lotr.Hobbit;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-// import static org.junit.jupiter.api.Assertions.assertTrue;
+import lotr.Hobbit;
+import lotr.Character;
 
-// public class HobbitTest {
-//     private Hobbit character;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-//     @BeforeEach
-//     public void init() {
-//         character = new Hobbit();
-//     }
+public class HobbitTest {
+    private Hobbit character;
 
-//     @Test
-//     public void testToString() {
-//         assertEquals("Hobbit{hp=3, power=0}", character.toString());
-//     }
+    @BeforeEach
+    public void init() {
+        character = new Hobbit();
+    }
 
-//     @Test
-//     public void testIsClass() {
-//         assertTrue(character instanceof lotr.Character);
-//     }
+    @Test
+    public void testToString() {
+        assertEquals("Hobbit{hp=3, power=0}", character.toString());
+    }
 
-//     @Test
-//     public void testSetHp() {
-//         character.setHp(-100);
-//         assertEquals(0, character.getHp());
-//     }
-// }
+    @Test
+    public void testIsClass() {
+        assertTrue(character instanceof lotr.Character);
+    }
+
+    @Test
+    public void testSetHp() {
+        character.setHp(-100);
+        assertEquals(0, character.getHp());
+    }
+}
