@@ -24,10 +24,12 @@ public class GameManager {
             }
             i += 1;
         }
-        if (c1.isAlive()) {
+        if (c1.isAlive() && !c2.isAlive()) {
             System.out.println("Character 1 (" + c1 + ") won on " + i + " round with " + c1.getHp() + " HP");
-        } else {
+        } else if (!c1.isAlive() && c2.isAlive()) {
             System.out.println("Character 2 (" + c2 + ") won on " + i + " round with " + c2.getHp() + " HP");
+        } else {
+            System.out.println("We don't have any winner");
         }
     }
 }
